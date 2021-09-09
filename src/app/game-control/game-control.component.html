@@ -1,0 +1,3 @@
+<button class="btn btn-success" (click)="onStart()">{{ lastNumber == 0 ? 'Start Counter' : 'Continue Counter' }}</button>
+<button class="btn btn-danger" (click)="onPause()">Pause Counter</button>
+<button class="btn btn-primary" (click)="onReset()" [disabled]="isDisable()">Reset Counter</button>
